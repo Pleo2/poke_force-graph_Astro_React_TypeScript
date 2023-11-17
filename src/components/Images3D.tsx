@@ -1,5 +1,4 @@
 import BubbleTitle from "./BubbleTitle"
-// ---
 
 export default function Images3D():JSX.Element {
     return <>
