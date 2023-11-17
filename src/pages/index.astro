@@ -1,7 +1,5 @@
 ---
-import Images3D from '../components/Names3D'
-import Names2D from '../components/Names2D'
-import Names3D from '../components/Images3D'
+import MainSection from '../components/MainSection'
 ---
 
 <html lang="en">
@@ -13,16 +11,7 @@ import Names3D from '../components/Images3D'
 		<title>Astro</title>
 	</head>
 	<body class="h-screen">
-		<main
-			id="main-section"
-			class=`bg-gray-500 w-full h-full rounded-md grid grid-cols-2 grid-row-2 p-4
-			[&>section]:bg-gray-200 [&>section]:rounded-md`
-		>
-			<!-- ! No Change The order of the components -->
-			<Names2D />
-			<Names3D />
-			<Images3D />
-		</main>
+		<MainSection client:only/>
 	</body>
 </html>
 
