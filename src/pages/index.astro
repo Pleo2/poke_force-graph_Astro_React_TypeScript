@@ -1,5 +1,8 @@
 ---
 import Header from '../components/Header'
+import Images3D from '../components/Images3D'
+import Names2D from '../components/Names2D'
+import Names3D from '../components/Names3D'
 ---
 
 <html lang="en">
@@ -12,24 +15,18 @@ import Header from '../components/Header'
 	</head>
 	<body class="h-screen">
 		<main
-		id="main-section"
-		class=`
-		bg-gray-500 w-full h-full rounded-md grid grid-cols-2 grid-row-2 p-4
-		[&>section]:bg-gray-200 [&>section]:rounded-md `
+			id="main-section"
+			class=`bg-gray-500 w-full h-full rounded-md grid grid-cols-2 grid-row-2 p-4
+			[&>section]:bg-gray-200 [&>section]:rounded-md`
 		>
-		<section class="mr-4 mb-4 ml-0 grid">
-			<div class="bg-gray-500 w-1/2 p-2 h-max rounded-l-md rounded-tl-none justify-self-end">2d name</div>
-		</section>
-		<section class="row-span-2 grid">
-			<div class="bg-gray-500 w-1/2 p-2 h-max rounded-l-md rounded-tl-none justify-self-end">3d name</div>
-		</section>
-		<section class="ml-0 mr-4 grid">
-			<div class="bg-gray-500 w-1/2 p-2 h-max rounded-l-md rounded-tl-none justify-self-end">3d Image</div>
-		</section>
-	</main>
-	<Header />
-</body>
+			<!-- No Change The order of the components -->
+			<Names2D />
+			<Names3D />
+			<Images3D />
+		</main>
+		<Header />
+	</body>
 </html>
 
-<script>
-</script>
+<script></script>
+ ../components/Text2D../components/Names2D
