@@ -1,7 +1,7 @@
 import { ForceGraph2D } from 'react-force-graph'
 import BubbleTitle from './BubbleTitle'
 
-export default function Names2D({data}): JSX.Element {
+export default function Names2D({ data }): JSX.Element {
 		return (
 		<>
 			<section className="mr-4 mb-4 ml-0 flex flex-col bg-blue-400 Names3D relative">

@@ -17,11 +17,11 @@ export default function MainSection ():JSX.Element {
 			{/* ! No Change The order of the components --> */}
             {loading && <h2>loading...</h2>}
             {error && <h2>error</h2>}
-            {!loading && !error && (data?.links?.length > 1) && <>
+            {data?.nodes.length > 1 && (<>
 			    <Names2D data={data}/>
-			    <Images3D />
-			    <Names3D data={data}/>
-            </>}
+			    <Images3D data={data} />
+                <Names3D data={data}/>
+            </>)}
 		</main>
     
     </>

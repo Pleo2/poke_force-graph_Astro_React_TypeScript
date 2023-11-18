@@ -35,6 +35,12 @@ dependencies:
   tailwindcss:
     specifier: ^3.0.24
     version: 3.3.5
+  three:
+    specifier: 0.158.0
+    version: 0.158.0
+  three-spritetext:
+    specifier: 1.8.1
+    version: 1.8.1(three@0.158.0)
   typescript:
     specifier: ^5.2.2
     version: 5.2.2
@@ -5964,6 +5970,15 @@ packages:
       accessor-fn: 1.5.0
       kapsule: 1.14.5
       polished: 4.2.2
+      three: 0.158.0
+    dev: false
+
+  /three-spritetext@1.8.1(three@0.158.0):
+    resolution: {integrity: sha512-pohv5CcdeUtAPLi9KhG0kcDLj3gmzdIFK/QlgsTJe+U07oQFSj+K0DLPQKbNDPWAK+7YzhulkRcjWdVIQ5F7nw==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      three: '>=0.86.0'
+    dependencies:
       three: 0.158.0
     dev: false
 
