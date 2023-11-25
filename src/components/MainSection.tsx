@@ -1,7 +1,11 @@
+// components and hooks
 import Names2D from './Names2D'
 import Images3D from './Images3D'
+import ProgressBar from './ProgressBar'
 import useGetPoke from '../hooks/useGetpoke'
+// -- utils
 import { genRandomTree } from '../utils/GenRandomTree'
+// -- styles
 import '../styles/pokeLoading.css'
 
 export default function MainSection(): JSX.Element {
@@ -10,12 +14,17 @@ export default function MainSection(): JSX.Element {
 	return (
 		<>
 			{loading && (
-				<div className='ball'></div>
+				<>
+					<div className="ball"></div>
+					<div className='absolute bottom-96'>
+						<ProgressBar />
+					</div>
+				</>
 			)}
 			{data && !loading && (
 				<main
 					id="main-section"
-						className=" bg-black w-full h-[95%] rounded-md flex p-4						[&>section]:rounded-md"
+					className=" bg-black w-full h-[95%] rounded-md flex p-4						[&>section]:rounded-md"
 				>
 					{/* ! No Change The order of the components --> */}
 
