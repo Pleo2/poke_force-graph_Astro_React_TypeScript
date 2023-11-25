@@ -2,27 +2,30 @@ import Names2D from './Names2D'
 import Images3D from './Images3D'
 import useGetPoke from '../hooks/useGetpoke'
 import { genRandomTree } from '../utils/GenRandomTree'
+import '../styles/pokeLoading.css'
 
 export default function MainSection(): JSX.Element {
 	const { poke, loading, error } = useGetPoke()
 	const data = genRandomTree({ reverse: false, poke })
 	return (
 		<>
-			<main
-				id="main-section"
-				className="bg-gray-500 w-full h-full rounded-md flex  p-4 [&>section]:bg-gray-300
-			[&>section]:rounded-md"
-			>
-				{/* ! No Change The order of the components --> */}
-				{loading && <h2>loading...</h2>}
-				{error && <h2>error</h2>}
-				{data && (
+			{loading && (
+				<div className='ball'></div>
+			)}
+			{data && !loading && (
+				<main
+					id="main-section"
+						className=" bg-black w-full h-[95%] rounded-md flex p-4						[&>section]:rounded-md"
+				>
+					{/* ! No Change The order of the components --> */}
+
 					<>
 						<Names2D data={data} key={'Names-2D'} />
-						<Images3D data={data} key={'Images-3D'}/>
+						<Images3D data={data} key={'Images-3D'} />
 					</>
-				)}
-			</main>
+				</main>
+			)}
+			{error && <h1>Error...</h1>}
 		</>
 	)
 }
