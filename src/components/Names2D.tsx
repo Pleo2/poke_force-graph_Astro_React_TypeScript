@@ -1,7 +1,8 @@
 import { ForceGraph2D } from 'react-force-graph'
 import BubbleTitle from './BubbleTitle'
+import type { GraphProps } from '../types/GraphProps'
 
-export default function Names2D({ data }): JSX.Element {
+export default function Names2D({data}:GraphProps): JSX.Element {
 		return (
 		<>
 			<section className="mr-4 ml-0 flex flex-col bg-white Names3D relative">
@@ -13,8 +14,8 @@ export default function Names2D({ data }): JSX.Element {
 						graphData={data}
 						nodeAutoColorBy="type"
 						backgroundColor='rgb(255 255 255)'
-						width={window.innerWidth * 0.465}
-						height={window.innerWidth * 0.925}
+						width={parent.innerWidth * 0.456}
+						height={parent.innerHeight * 0.925 * 0.98}
 						nodeCanvasObject={(node, ctx, globalScale) => {
 							const label = node.name
 							const fontSize = 12/ globalScale
@@ -25,7 +26,8 @@ export default function Names2D({ data }): JSX.Element {
 							ctx.fillRect(
 								node.x - bckgDimensions[0] / 2,
 								node.y - bckgDimensions[1] / 2,
-								...bckgDimensions
+								bckgDimensions[0],
+								bckgDimensions[1]
 							)
 
 							ctx.textAlign = 'center'
@@ -42,7 +44,8 @@ export default function Names2D({ data }): JSX.Element {
 								ctx.fillRect(
 									node.x - bckgDimensions[0] / 2,
 									node.y - bckgDimensions[1] / 2,
-									...bckgDimensions
+									bckgDimensions[0],
+									bckgDimensions[1]
 								)
 						}}
 					/>
