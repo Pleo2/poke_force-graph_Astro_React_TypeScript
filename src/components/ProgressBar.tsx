@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import {Progress} from "@nextui-org/progress";
 
 export default function ProgressBar():JSX.Element {
   const [value, setValue] = useState(0);
@@ -13,13 +12,6 @@ export default function ProgressBar():JSX.Element {
   }, []);
 
   return (
-    <Progress
-      aria-label="Downloading..."
-      size="lg"
-      value={value}
-      color="danger"
-      showValueLabel={true}
-      className="max-w-md"
-    />
+    <h2 className="font-sans font-extrabold text-gray-700 text-4xl mb-20">{`${value} %`}</h2>
   );
 }
