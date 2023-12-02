@@ -1,7 +1,7 @@
 // components and hooks
 import Names2D from './Names2D'
 import Images3D from './Images3D'
-import ProgressBar from './ProgressBar'
+import ProgressCount from './ProgressCount'
 import useGetPoke from '../hooks/useGetpoke'
 // -- utils
 import { genRandomTree } from '../utils/GenRandomTree'
@@ -17,7 +17,7 @@ export default function MainSection(): JSX.Element {
 				<>
 					<div className="ball"></div>
 					<div className='absolute bottom-96'>
-						<ProgressBar />
+						<ProgressCount />
 					</div>
 				</>
 			)}

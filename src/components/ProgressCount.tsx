@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function ProgressBar():JSX.Element {
+export default function ProgressCount():JSX.Element {
   const [value, setValue] = useState(0);
 
   useEffect(() => {
