@@ -5,7 +5,7 @@ export default function ProgressCount():JSX.Element {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setValue((v) => (v >= 90 ? 0 : v + 10));
+      setValue((v) => (v >= 80 ? v + 1 : v + 10));
     }, 1000);
 
     return () => clearInterval(interval);
