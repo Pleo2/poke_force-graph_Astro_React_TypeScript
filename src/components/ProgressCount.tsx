@@ -12,6 +12,6 @@ export default function ProgressCount():JSX.Element {
   }, []);
 
   return (
-    <h2 className="font-sans font-extrabold text-gray-700 text-4xl mb-20">{`${value} %`}</h2>
+    <h2 className="font-sans font-extrabold text-gray-700 text-4xl">{`${value} %`}</h2>
   );
 }
