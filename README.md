@@ -21,13 +21,15 @@ Para instalar y configurar Poke Force Graph, siga los siguientes pasos:
 `pnpm run dev`
 
 Abra el navegador y vaya a `http://localhost:4321`
-Uso
 
-Contribuciones
+## Contribuciones
+
 Las contribuciones son bienvenidas. Para contribuir, siga los siguientes pasos:
 
 Fork el repositorio.
 Haga los cambios que desee.
 Envíe una solicitud de extracción.
-Licencia
+
+## Licencia
+
 Poke Force Graph está licenciado bajo la licencia MIT.
