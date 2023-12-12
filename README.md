@@ -1,47 +1,33 @@
-# Astro Starter Kit: Minimal
+# Poke Force Graph
+![Screenshot main page](public/lowScreenShot.png)
+## Descripción
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Poke Force Graph es una aplicación web que muestra un graph de fuerza de los Pokémon de la primera generación. 
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## Estado
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+El proyecto está en desarrollo.
 
-## 🚀 Project Structure
+## Instalación y configuración
 
-Inside of your Astro project, you'll see the following folders and files:
+Para instalar y configurar Poke Force Graph, siga los siguientes pasos:
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+1. Instale los paquetes necesarios:
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+`pnpm install`
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+2. Inicie el servidor de desarrollo:
 
-Any static assets, like images, can be placed in the `public/` directory.
+`pnpm run dev`
 
-## 🧞 Commands
+Abra el navegador y vaya a `http://localhost:4321`
+Uso
 
-All commands are run from the root of the project, from a terminal:
+Contribuciones
+Las contribuciones son bienvenidas. Para contribuir, siga los siguientes pasos:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Fork el repositorio.
+Haga los cambios que desee.
+Envíe una solicitud de extracción.
+Licencia
+Poke Force Graph está licenciado bajo la licencia MIT.
